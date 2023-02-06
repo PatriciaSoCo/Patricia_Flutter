@@ -8,7 +8,7 @@ void main() {
       backgroundColor: Colors.deepPurpleAccent,
     ),
     body: Center(
-        child: Image(image:NetworkImage ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0kNoViG6BVHwA8RiNmoK_NdBJc9STDnsrA&usqp=CAU")
+        child: Image(image: AssetImage ("Images/cat.jpg"),
 
     )),
     bottomNavigationBar: TextButton(
