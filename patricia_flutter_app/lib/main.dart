@@ -7,10 +7,16 @@ void main() {
       title: Center(child: Text("Flutter Project")),
       backgroundColor: Colors.deepPurpleAccent,
     ),
-    body: Center(
-        child: Image(image: AssetImage ("Images/cat.jpg"),
+    body: Container (
+        color: Colors.deepOrange,
+          child: Row (
+            children: [ Center(
+                child: Image(image: AssetImage ("Images/cat.jpg"),
 
-    )),
+                )),
+            ],
+          ),
+    ),
     bottomNavigationBar: TextButton(
         child: Text("Need help?"),
         style: TextButton.styleFrom(
