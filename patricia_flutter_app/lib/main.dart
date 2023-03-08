@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,15 +9,37 @@ void main() {
       title: Center(child: Text("Flutter Project")),
       backgroundColor: Colors.deepPurpleAccent,
     ),
-    body: Container (
-        color: Colors.deepOrange,
-          child: Row (
-            children: [ Center(
-                child: Image(image: AssetImage ("Images/cat.jpg"),
-
-                )),
-            ],
+    body: Container(
+      child: Column(
+        children: [
+          Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image(
+                height: 250,
+            image: AssetImage("Images/cat.jpg"),
+          )),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Enter email',
+              ),
+            ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField (
+              obscureText: true,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Enter Password',
+              ),
+            )
+          )
+
+        ],
+      ),
     ),
     bottomNavigationBar: TextButton(
         child: Text("Need help?"),
